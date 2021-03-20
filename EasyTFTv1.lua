@@ -92,6 +92,7 @@ Menu.Visible = false
 UICorner_2.CornerRadius = UDim.new(0, 15)
 UICorner_2.Parent = Menu
 
+--contains all the scripted buttons
 bunchofbuttons.Name = "bunchofbuttons"
 bunchofbuttons.Parent = Menu
 bunchofbuttons.Active = true
@@ -246,7 +247,7 @@ YFlowerESPbtn.Text = "Yellow Flower ESP"
 YFlowerESPbtn.TextColor3 = Color3.fromRGB(0, 0, 0)
 YFlowerESPbtn.TextSize = 14.000
 YFlowerESPbtn.TextWrapped = true
-YFlowerESPbtn.MouseButton1Down:connect:function()
+YFlowerESPbtn.MouseButton1Down:connect(function()
 for __,v in pairs(game:GetService("Workspace").Game.Quests.Objects.Flower1:GetDescendants()) do
  if v.Name == "QND1" or "QND2" or "QND3" or "QND4" or "QND5" or "QND6" or "QND7" or "QND8" or "QND9" or "QND10" or "QND11" then
    a.Name = "YF"
@@ -259,7 +260,7 @@ for __,v in pairs(game:GetService("Workspace").Game.Quests.Objects.Flower1:GetDe
    b.BackgroundColor3 = Color3.new(255, 255, 255)
  end
 end
-end
+end)
 
 UICorner_5.CornerRadius = UDim.new(0, 25)
 UICorner_5.Parent = YFlowerESPbtn
@@ -276,7 +277,7 @@ BunKeyESPbtn.Text = "Bunker Keycard ESP"
 BunKeyESPbtn.TextColor3 = Color3.fromRGB(0, 0, 0)
 BunKeyESPbtn.TextSize = 14.000
 BunKeyESPbtn.TextWrapped = true
-BunKeyESPbtn.MouseButton1Down:connect:function()
+BunKeyESPbtn.MouseButton1Down:connect(function()
 for __,v in pairs(game:GetService("Workspace").Game.Quests.Objects.Stuff1:GetDescendants()) do -- the path
  if v.Name == "QKK1" then -- the item
    local a = Instance.new("BillboardGui",v) -- pretty much explains everything
@@ -299,7 +300,7 @@ for __,v in pairs(game:GetService("Workspace").Game.Quests.Objects.Stuff1:GetDes
    c.Position = UDim2.new(0.5, 0.5)
  end
 end
-end
+end)
 
 UICorner_6.CornerRadius = UDim.new(0, 25)
 UICorner_6.Parent = BunKeyESPbtn
@@ -316,7 +317,7 @@ EggESPbtn.Text = "Egg ESP"
 EggESPbtn.TextColor3 = Color3.fromRGB(0, 0, 0)
 EggESPbtn.TextSize = 14.000
 EggESPbtn.TextWrapped = true
-EggESPbtn.MouseButton1Down:connect:function()
+EggESPbtn.MouseButton1Down:connect(function()
 for __,v in pairs(game:GetService("Workspace").Game.Quests.Objects.Egg:GetDescendants()) do -- the path
  if v.Name == "QNF1" then -- the item
    local a = Instance.new("BillboardGui",v) -- pretty much explains everything
@@ -339,7 +340,7 @@ for __,v in pairs(game:GetService("Workspace").Game.Quests.Objects.Egg:GetDescen
    c.Position = UDim2.new(0.5, 0.5)
  end
 end
-end
+end)
 
 UICorner_7.CornerRadius = UDim.new(0, 25)
 UICorner_7.Parent = EggESPbtn
@@ -390,7 +391,7 @@ GoldTPbtn.Text = "Gold"
 GoldTPbtn.TextColor3 = Color3.fromRGB(0, 0, 0)
 GoldTPbtn.TextSize = 14.000
 GoldTPbtn.TextWrapped = true
-GoldTPbtn.MouseButton1Down:connect:function()
+GoldTPbtn.MouseButton1Down:connect(function()
 for i,v in pairs(game.Workspace:FindFirstChild("Game").Ores["Gold_Piece"]:GetChildren()) do
 wait()
 v.CanCollide = false
@@ -406,7 +407,7 @@ wait()
 v.CanCollide = false
 v.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
 end
-end
+end)
 
 UICorner_9.CornerRadius = UDim.new(0, 25)
 UICorner_9.Parent = GoldTPbtn
@@ -423,13 +424,13 @@ GoldBlocksTPbtn.Text = "Gold Blocks"
 GoldBlocksTPbtn.TextColor3 = Color3.fromRGB(0, 0, 0)
 GoldBlocksTPbtn.TextSize = 14.000
 GoldBlocksTPbtn.TextWrapped = true
-GoldBlocksTPbtn.MouseButton1Down:connect:function()
+GoldBlocksTPbtn.MouseButton1Down:connect(function()
 for i,v in pairs(game.Workspace:FindFirstChild("Game").Ores["GoldBlocks"]:GetChildren()) do
 wait()
 v.CanCollide = false
 v.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
 end
-end
+end)
 
 UICorner_10.CornerRadius = UDim.new(0, 25)
 UICorner_10.Parent = GoldBlocksTPbtn
@@ -446,13 +447,13 @@ DiamondsTPbtn.Text = "Diamonds"
 DiamondsTPbtn.TextColor3 = Color3.fromRGB(0, 0, 0)
 DiamondsTPbtn.TextSize = 14.000
 DiamondsTPbtn.TextWrapped = true
-DiamondsTPbtn.MouseButton1Down:connect:function()
+DiamondsTPbtn.MouseButton1Down:connect(function()
 for i,v in pairs(game.Workspace:FindFirstChild("Game").Ores["Diamonds"]:GetChildren()) do
 wait()
 v.CanCollide = false
 v.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
 end
-end
+end)
 
 UICorner_11.CornerRadius = UDim.new(0, 25)
 UICorner_11.Parent = DiamondsTPbtn
@@ -469,13 +470,13 @@ UraniumTixTPbtn.Text = "UraniumTix"
 UraniumTixTPbtn.TextColor3 = Color3.fromRGB(0, 0, 0)
 UraniumTixTPbtn.TextSize = 14.000
 UraniumTixTPbtn.TextWrapped = true
-UraniumTixTPbtn.MouseButton1Down:connect:function()
+UraniumTixTPbtn.MouseButton1Down:connect(function()
 for i,v in pairs(game.Workspace:FindFirstChild("Game").Ores["UraniumTix"]:GetChildren()) do
 wait()
 v.CanCollide = false
 v.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
 end
-end
+end)
 
 UICorner_12.CornerRadius = UDim.new(0, 25)
 UICorner_12.Parent = UraniumTixTPbtn
@@ -492,13 +493,13 @@ TixiumTPbtn.Text = "Tixium"
 TixiumTPbtn.TextColor3 = Color3.fromRGB(0, 0, 0)
 TixiumTPbtn.TextSize = 14.000
 TixiumTPbtn.TextWrapped = true
-TixiumTPbtn.MouseButton1Down:connect:function()
+TixiumTPbtn.MouseButton1Down:connect(function()
 for i,v in pairs(game:GetService("Workspace").Game.Ores["Tixium"]:GetChildren()) do
 wait()
 v.CanCollide = false
 v.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
 end
-end
+end)
 
 UICorner_13.CornerRadius = UDim.new(0, 25)
 UICorner_13.Parent = TixiumTPbtn
@@ -515,13 +516,13 @@ ForgottenTixTPbtn.Text = "ForgottenTix"
 ForgottenTixTPbtn.TextColor3 = Color3.fromRGB(0, 0, 0)
 ForgottenTixTPbtn.TextSize = 14.000
 ForgottenTixTPbtn.TextWrapped = true
-ForgottenTixTPbtn.MouseButton1Down:connect:function()
+ForgottenTixTPbtn.MouseButton1Down:connect(function()
 for i,v in pairs(game.Workspace:FindFirstChild("Game").Ores["Forgot_Piece"]:GetChildren()) do
 wait()
 v.CanCollide = false
 v.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
 end
-end
+end)
 
 UICorner_14.CornerRadius = UDim.new(0, 25)
 UICorner_14.Parent = ForgottenTixTPbtn
@@ -538,13 +539,13 @@ SmallCrystalWFTixTPbtn.Text = "Small Crystals (won't freeze)"
 SmallCrystalWFTixTPbtn.TextColor3 = Color3.fromRGB(0, 0, 0)
 SmallCrystalWFTixTPbtn.TextSize = 14.000
 SmallCrystalWFTixTPbtn.TextWrapped = true
-SmallCrystalWFTixTPbtn.MouseButton1Down:connect:function()
+SmallCrystalWFTixTPbtn.MouseButton1Down:connect(function()
 for i,v in pairs(game.Workspace:FindFirstChild("Game").Ores["TCCIC"]:GetChildren()) do
 wait()
 v.CanCollide = false
 v.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
 end
-end
+end)
 
 UICorner_15.CornerRadius = UDim.new(0, 25)
 UICorner_15.Parent = SmallCrystalWFTixTPbtn
@@ -595,7 +596,7 @@ BigCrystalsTPbtn.Text = "Big Crystals"
 BigCrystalsTPbtn.TextColor3 = Color3.fromRGB(0, 0, 0)
 BigCrystalsTPbtn.TextSize = 14.000
 BigCrystalsTPbtn.TextWrapped = true
-BigCrystalsTPbtn.MouseButton1Down:connect:function()
+BigCrystalsTPbtn.MouseButton1Down:connect(function()
 for i,v in pairs(game.Workspace:FindFirstChild("Game").Ores["SuperIce"]:GetChildren()) do
 wait()
 v.CanCollide = false
@@ -613,7 +614,7 @@ wait()
 v.CanCollide = false
 v.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
 end
-end
+end)
 
 UICorner_17.CornerRadius = UDim.new(0, 25)
 UICorner_17.Parent = BigCrystalsTPbtn
@@ -630,7 +631,7 @@ SmallCrystalsTPbtn.Text = "Small Crystals"
 SmallCrystalsTPbtn.TextColor3 = Color3.fromRGB(0, 0, 0)
 SmallCrystalsTPbtn.TextSize = 14.000
 SmallCrystalsTPbtn.TextWrapped = true
-SmallCrystalsTPbtn.MouseButton1Down:connect:function()
+SmallCrystalsTPbtn.MouseButton1Down:connect(function()
 for i,v in pairs(game.Workspace:FindFirstChild("Game").Ores["SMALLICCE"]:GetChildren()) do
 wait()
 v.CanCollide = false
@@ -642,7 +643,7 @@ wait()
 v.CanCollide = false
 v.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
 end
-end
+end)
 
 UICorner_18.CornerRadius = UDim.new(0, 25)
 UICorner_18.Parent = SmallCrystalsTPbtn
@@ -659,13 +660,13 @@ UraniumTPbtn.Text = "Uranium"
 UraniumTPbtn.TextColor3 = Color3.fromRGB(0, 0, 0)
 UraniumTPbtn.TextSize = 14.000
 UraniumTPbtn.TextWrapped = true
-UraniumTPbtn.MouseButton1Down:connect:function()
+UraniumTPbtn.MouseButton1Down:connect(function()
 for i,v in pairs(game:GetService("Workspace").Game.Ores["Uranium"]:GetChildren()) do
 wait()
 v.CanCollide = false
 v.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
 end
-end
+end)
 
 UICorner_19.CornerRadius = UDim.new(0, 25)
 UICorner_19.Parent = UraniumTPbtn
@@ -682,13 +683,13 @@ LavaTixTPbtn.Text = "LavaTix"
 LavaTixTPbtn.TextColor3 = Color3.fromRGB(0, 0, 0)
 LavaTixTPbtn.TextSize = 14.000
 LavaTixTPbtn.TextWrapped = true
-LavaTixTPbtn.MouseButton1Down:connect:function()
+LavaTixTPbtn.MouseButton1Down:connect(function()
 for i,v in pairs(game.Workspace:FindFirstChild("Game").Ores["LavaTix"]:GetChildren()) do
 wait()
 v.CanCollide = false
 v.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
 end
-end
+end)
 
 UICorner_20.CornerRadius = UDim.new(0, 25)
 UICorner_20.Parent = LavaTixTPbtn
@@ -705,13 +706,13 @@ CrystalTixTPbtn.Text = "CrystalTix"
 CrystalTixTPbtn.TextColor3 = Color3.fromRGB(0, 0, 0)
 CrystalTixTPbtn.TextSize = 14.000
 CrystalTixTPbtn.TextWrapped = true
-CrystalTixTPbtn.MouseButton1Down:connect:function()
+CrystalTixTPbtn.MouseButton1Down:connect(function()
 for i,v in pairs(game.Workspace:FindFirstChild("Game").Ores["CrystalTix"]:GetChildren()) do
 wait()
 v.CanCollide = false
 v.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
 end
-end
+end)
 
 UICorner_21.CornerRadius = UDim.new(0, 25)
 UICorner_21.Parent = CrystalTixTPbtn
