@@ -1,4 +1,4 @@
-local ScreenGui = Instance.new("ScreenGui")
+local ScreenGui = Instance.new("EasyTFTGui")
 local OpenCloseButton = Instance.new("TextButton")
 local UICorner = Instance.new("UICorner")
 local Menu = Instance.new("Frame")
@@ -56,7 +56,7 @@ local UICorner_21 = Instance.new("UICorner")
 
 
 
-ScreenGui.Parent = game.CoreGui
+EasyTFT.Parent = game.CoreGui
 
 
 --Will open or close Menu frame
@@ -88,6 +88,7 @@ Menu.BackgroundTransparency = 0.100
 Menu.Position = UDim2.new(0.5, 0, 1.07099998, 10)
 Menu.Size = UDim2.new(0, 324, 0, 218)
 Menu.Visible = false
+Menu.Draggable = true
 
 UICorner_2.CornerRadius = UDim.new(0, 15)
 UICorner_2.Parent = Menu
