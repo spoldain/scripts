@@ -1,4 +1,4 @@
-local EasyTFT = Instance.new("ScreenGui")
+local ScreenGui = Instance.new("ScreenGui")
 local OpenCloseButton = Instance.new("TextButton")
 local UICorner = Instance.new("UICorner")
 local Menu = Instance.new("Frame")
@@ -56,7 +56,7 @@ local UICorner_21 = Instance.new("UICorner")
 
 
 
-EasyTFT.Parent = game.CoreGui
+ScreenGui.Parent = game.CoreGui
 
 
 --Will open or close Menu frame
