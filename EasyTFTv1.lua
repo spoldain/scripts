@@ -88,7 +88,7 @@ Menu.BackgroundTransparency = 0.100
 Menu.Position = UDim2.new(0.5, 0, 1.07099998, 10)
 Menu.Size = UDim2.new(0, 324, 0, 218)
 Menu.Visible = false
-Menu.Draggable = true
+--Menu.Draggable = true
 
 UICorner_2.CornerRadius = UDim.new(0, 15)
 UICorner_2.Parent = Menu
