@@ -1,4 +1,4 @@
-local ScreenGui = Instance.new("EasyTFTGui")
+local EasyTFT = Instance.new("ScreenGui")
 local OpenCloseButton = Instance.new("TextButton")
 local UICorner = Instance.new("UICorner")
 local Menu = Instance.new("Frame")
