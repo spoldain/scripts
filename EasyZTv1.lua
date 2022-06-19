@@ -181,6 +181,6 @@ local destroygui = Tab:AddButton({
 
 Tab:AddParagraph("Scripted By","Mulgerro1")
 Tab:AddParagraph("GUI","Orion UI Library")
-Tab:AddParagraph("Version","1.0")
+Tab:AddParagraph("Version","1.0.0")
 
 OrionLib:Init()
