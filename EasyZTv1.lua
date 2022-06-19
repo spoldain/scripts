@@ -1,6 +1,6 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
-local Window = OrionLib:MakeWindow({Name = "Zombie Tycoon", HidePremium = true, SaveConfig = false, ConfigFolder = "ZombTycStuff", IntroEnabled = true, IntroText = "Zombie Tycoon GUI"})
+local Window = OrionLib:MakeWindow({Name = "Zombie Tycoon | EasyZT GUI", HidePremium = true, SaveConfig = false, ConfigFolder = "ZombTycStuff", IntroEnabled = true, IntroText = "EasyZT GUI"})
 
 OrionLib:MakeNotification({
     Name = "EasyZT GUI",
