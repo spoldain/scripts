@@ -152,7 +152,7 @@ local desc = Tab:AddSection({
     Name = "Description of some buttons"
 })
 
-Tab:AddParagraph("Free Gamepasses","Gives you all the gamepasses. Execute only once - works for the session. Credits to NamNam0w0 for All Gamepasses script")
+Tab:AddParagraph("Free Gamepasses","Gives you all the gamepasses. Execute only once - works for the session. Credits to NamNam0w0")
 Tab:AddParagraph("Jump Cooldown","Removes jump cooldown. Must re-execute if died.")
 Tab:AddParagraph("Zombies Following","Zombies stop following and are harmless. Must re-execute if died.")
 
