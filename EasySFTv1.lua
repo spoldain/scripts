@@ -1,9 +1,9 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
-local Window = OrionLib:MakeWindow({Name = "EasyBlender", HidePremium = true, SaveConfig = false, ConfigFolder = "BlenderTycStuff", IntroEnabled = true, IntroText = "Easy Blender GUI"})
+local Window = OrionLib:MakeWindow({Name = "EasySFT", HidePremium = true, SaveConfig = false, ConfigFolder = "ESFTycStuff", IntroEnabled = true, IntroText = "EasySFT GUI"})
 
 OrionLib:MakeNotification({
-    Name = "EasyBlender GUI",
+    Name = "EasySFT GUI",
     Content = "GUI is loaded successfully!",
     Time = 10
 })
