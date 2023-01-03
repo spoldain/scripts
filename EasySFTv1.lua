@@ -1,6 +1,6 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
-local Window = OrionLib:MakeWindow({Name = "EasySFT", HidePremium = true, SaveConfig = false, ConfigFolder = "ESFTycStuff", IntroEnabled = true, IntroText = "EasySFT GUI"})
+local Window = OrionLib:MakeWindow({Name = "Easy Smoothie Factory Tycoon", HidePremium = true, SaveConfig = false, ConfigFolder = "ESFTycStuff", IntroEnabled = true, IntroText = "EasySFT GUI"})
 
 OrionLib:MakeNotification({
     Name = "EasySFT GUI",
